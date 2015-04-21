@@ -92,6 +92,17 @@ typedef NS_ENUM(NSInteger, TWMessageBarMessageType) {
  */
 - (UIColor *)descriptionColorForMessageType:(TWMessageBarMessageType)type;
 
+/**
+ *  The (optional) NSTextAlignment to be used for the message's title and description.
+ *
+ *  Default: NSTextAlignmentLeft
+ *
+ *  @param type A MessageBarMessageType (error, information, success, etc).
+ *
+ *  @return NSTextAlignment instance representing the description color.
+ */
+- (NSTextAlignment)textAlignementForMessageType:(TWMessageBarMessageType)type;
+
 @end
 
 @interface TWMessageBarManager : NSObject
