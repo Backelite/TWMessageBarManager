@@ -947,4 +947,15 @@ static UIColor *kTWDefaultMessageBarStyleSheetInfoStrokeColor = nil;
     return self.statusBarHidden;
 }
 
+#pragma mark - Orientation
+
+- (BOOL)shouldAutorotate
+{
+    return NO;
+}
+
+- (NSUInteger)supportedInterfaceOrientations
+{
+    return UIInterfaceOrientationMaskPortrait;
+}
 @end
